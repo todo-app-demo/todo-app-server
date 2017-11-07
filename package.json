@@ -1,0 +1,31 @@
+{
+  "name": "todo-app-server",
+  "version": "1.0.0",
+  "description": "Back-end of todo app demo",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/todo-app-demo/todo-app-server.git"
+  },
+  "keywords": [
+    "todo",
+    "server",
+    "app",
+    "demo"
+  ],
+  "author": "Allie Grampa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/todo-app-demo/todo-app-server/issues"
+  },
+  "homepage": "https://github.com/todo-app-demo/todo-app-server#readme",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "pg": "^7.4.0"
+  }
+}
