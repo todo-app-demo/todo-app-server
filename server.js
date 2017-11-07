@@ -26,6 +26,9 @@ app.get('*', (req, res) => res.redirect(CLIENT_URL));
 
 app.listen(PORT, () => console.log(`Listening on port: ${PORT}`));
 
-// PORT=3000
-// CLIENT_URL=http://localhost:8080
-// DATABASE_URL=postgres://localhost:5432/task_app
+function loadDB() {
+  client.query(`
+    CREATE TABLE IF NOT EXISTS
+    tasks(id serial primary key, title varchar(255), description varchar(255), contact varchar(255), status varchar(255), category varchar(255), due varchar(255));
+    `)
+}
